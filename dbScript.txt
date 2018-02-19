@@ -1,0 +1,369 @@
+USE test;
+
+DROP TABLE IF EXISTS book;
+CREATE TABLE book (
+  id          INT(11)      NOT NULL AUTO_INCREMENT,
+  title       VARCHAR(100) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  author      VARCHAR(100) NOT NULL,
+  isbn        VARCHAR(20)  NOT NULL,
+  printYear   INT          NOT NULL,
+  readAlready BOOLEAN      NOT NULL,
+  PRIMARY KEY (id)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARACTER SET = utf8;
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "Harry Potter and Philosopher's Stone",
+  "The plot follows Harry Potter, a young wizard who discovers his magical heritage as he makes close friends and a few enemies in his first year at the Hogwarts School of Witchcraft and Wizardry.",
+  "J. K. Rowling",
+  "ISBN-01",
+  1997,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "Harry Potter and The Chamber of Secrets",
+  "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling and the second novel in the Harry Potter series.",
+  "J. K. Rowling",
+  "ISBN-02",
+  1998,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "Harry Potter and The Prisoner of Azkaban",
+  "Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. Rowling and the third l in the Harry Potter series. ",
+  "J. K. Rowling",
+  "ISBN-03",
+  1999,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "Harry Potter and The Goblet of Fire",
+  "Harry Potter and the Goblet of Fire is a fantasy book written by British author J. K. Rowling and the fourth novel in the Harry Potter series.",
+  "J. K. Rowling",
+  "ISBN-04",
+  2000,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "Harry Potter and The Order of the Phoenix",
+  "Harry Potter and the Order of the Phoenix is a fantasy novel written by J. K. Rowling and the fifth novel in the Harry Potter series. ",
+  "J. K. Rowling",
+  "ISBN-05",
+  2003,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "Harry Potter and The Half-Blood Prince",
+  "Harry Potter and the Half-Blood Prince is a fantasy novel written by British author J. K. Rowling and the sixth and penultimate novel in the Harry Potter series.",
+  "J. K. Rowling",
+  "ISBN-06",
+  2005,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "Harry Potter and the Deathly Hallows is a fantasy novel written by British author J. K. Rowling and the seventh and final novel of the Harry Potter series.",
+  "Long time ago...",
+  "J. K. Rowling",
+  "ISBN-07",
+  2007,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "A Clash of Kings",
+  "Long time ago...",
+  "George R. R. Martin",
+  "ISBN-12",
+  1999,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "A Storm of Swords",
+  "Long time ago...",
+  "George R. R. Martin",
+  "ISBN-13",
+  2000,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "A Feast for Crows",
+  "Long time ago...",
+  "George R. R. Martin",
+  "ISBN-14",
+  2005,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "A Dance with Dragons",
+  "Long time ago...",
+  "George R. R. Martin",
+  "ISBN-15",
+  2011,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "A Stainless Steel Rat is Born",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-21",
+  1985,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat Gets Drafted",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-22",
+  1987,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat Sings the Blues",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-23",
+  1994,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-24",
+  1966,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat’s Revenge",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-25",
+  1970,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat Saves the World",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-26",
+  1970,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat Wants You",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-27",
+  1978,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat for President",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-28",
+  1982,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat Goes to Hell",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-29",
+  1996,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat Joins the Circus",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-29-1",
+  1998,
+  FALSE
+);
+
+INSERT INTO book (
+  title,
+  description,
+  author,
+  isbn,
+  printYear,
+  readAlready
+) VALUES (
+  "The Stainless Steel Rat Returns",
+  "Long time ago...",
+  "Harry Harrison",
+  "ISBN-29-2",
+  1998,
+  FALSE
+);
+
+
